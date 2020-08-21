@@ -14,3 +14,10 @@
   display:flex;
   width: 100%;
 }
+
+footer{
+  background-color: rgb(228, 102, 0);
+  color: white;
+  text-align: center;
+  margin: 0;
+}

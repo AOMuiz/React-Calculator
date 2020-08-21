@@ -11,7 +11,8 @@ class App extends Component {
     super(props);
     
     this.state = {
-      input: ""
+      input: "",
+      placeholder:""
     }
   }
   
@@ -19,7 +20,7 @@ class App extends Component {
     this.setState(
       {
         input: this.state.input + val,
-        placeholder:""
+        placeholder: ""
       }
     );
   }
@@ -31,6 +32,7 @@ class App extends Component {
   handleClr = () => {
     this.setState(
       {
+        input: "",
         placeholder: 0
       }
     )
@@ -40,7 +42,8 @@ class App extends Component {
     let removelast = Math.floor(this.state.input / 10);
     this.setState(
       {
-        input: removelast
+        input: removelast,
+        placeholder: ""
       }
     )
   }
@@ -51,7 +54,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className = "calc-wrapper">
-          <Input id = "display" placeholder = {this.state.placeholder} input = {this.state.input}></Input>
+          <Input id = "display" type = "number" value = {0} input = {this.state.input || this.state.placeholder}></Input>
           <div className = "row">
             <Button id = "seven" handleClick = {this.addToInput}>7</Button>
             <Button id = "eight" handleClick = {this.addToInput}>8</Button>
@@ -77,10 +80,12 @@ class App extends Component {
             <Button id = "subtract" handleClick = {this.addToInput}>-</Button>
           </div>
           <div className = "row">
-            <ClearButton handleClear = {this.handleClr}>Clear</ClearButton>
+            <ClearButton id = "clear" handleClear = {this.handleClr}>Clear</ClearButton>
             <ClearButton handleClear = {this.handleClrLast}>CE</ClearButton>
           </div>
-          <footer>Creater By</footer>
+          <footer class="footer-distributed">
+              <p>AOMuiz &copy; 2020 || Created Using React and MathJs</p>
+		      </footer>
         </div>
       </div>
     );
