@@ -1,5 +1,5 @@
 .input {
-    height: 3em;
+    height: 2em;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -10,5 +10,5 @@
     padding: .5em;
     border: none;
     border-radius: 10px;
-    /* outline: 1px solid #888; */
+    outline: none;
 }

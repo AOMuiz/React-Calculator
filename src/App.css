@@ -1,27 +1,27 @@
-.App{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.App {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 50vh;
   width: 100%;
 }
 
-.calc-wrapper{
-  width:400px;
-  height:600px;
+.calc-wrapper {
+  width: 300px;
+  height: 300px;
 }
-.row{
-  display:flex;
+.row {
+  display: flex;
   width: 100%;
 }
 
-footer{
+footer {
   background-color: black;
   color: white;
   text-align: center;
   margin: 0;
 }
-footer a{
+footer a {
   color: white;
 }
