@@ -11,14 +11,14 @@ class App extends Component {
 
     this.state = {
       input: "",
-      placeholder: null,
+      placeholder: "",
     };
   }
 
   addToInput = (val) => {
     this.setState({
       input: this.state.input + val,
-      placeholder: null,
+      placeholder: "",
     });
   };
 
