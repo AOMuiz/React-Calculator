@@ -8,15 +8,21 @@
   background-color: #e0e1e6;
   color: #888;
   flex: 1;
-  margin: 7px;
   padding: 0.4em;
-  border: none;
-  border-radius: 10px;
+  border: 0.5px solid rgb(109, 109, 109);
   outline: none;
+}
+
+.button-wrapper:active {
+  background-color: #adadad;
 }
 
 .operator {
   background-color: #fe9241;
+  color: #fff;
+}
+.operator:active {
+  background-color: #ff7c17;
   color: #fff;
 }
 #decimal {

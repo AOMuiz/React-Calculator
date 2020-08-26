@@ -4,12 +4,9 @@
     justify-content: center;
     align-items: center;
     font-size: 1.4em;
-    background-color: #c5c3cd;
-    color: #000000;
+    /* background-color: #c5c3cd; */
     flex: 1;
-    border: none;
-    border-radius: 10px;
-    margin: 10px;
+    border: .5px solid rgb(109, 109, 109);
     /* outline: 1px solid  #000000; */
 }
 #clear {
@@ -17,6 +14,10 @@
     color: white;
 }
 #clr-last{
-    background-color: #fe9341f3;
+    background-color: #fe9241;;
     color: white;
+}
+#clr-last:active{
+    background-color: #fc8224f3;
+    outline: none;
 }
